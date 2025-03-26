@@ -1,8 +1,21 @@
 import React from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Homepage from './pages/Homepage'
+import Favourites from './pages/Favourites'
+
+
 
 function App() {
   return (
-    <div>App</div>
+  <>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Homepage/>} />
+        <Route path="/home" element={<Homepage/>} />
+        <Route path="/favourites" element={<Favourites/>} />
+      </Routes>
+    </BrowserRouter>
+  </>
   )
 }
 
