@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { searchMovies, getPopularMovies } from "../services/api";
 import "../css/Home.css";
 
-function Home() {
+function Homepage() {
   const [searchQuery, setSearchQuery] = useState("");
   const [movies, setMovies] = useState([]);
   const [error, setError] = useState(null);
@@ -73,4 +73,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Homepage;
